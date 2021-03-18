@@ -22,7 +22,7 @@ app.get("/tokens", async (req, res) => {
 
 app.post("/token", async (req, res) => {
   const secret = crypto.encrypt(req.body.secret);
-  const token = crypto.generateToken();
+  const token = `dp.token.${crypto.generateToken()}`;
   await dataStore.put(token, secret);
   res.send({
     token: token,
