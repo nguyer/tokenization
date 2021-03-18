@@ -56,3 +56,6 @@ The current server is implemented with an in-memory database. The rest of the co
      - Encrypt all data at rest
      - Enable tight access controls for which people/processes are allowed to access the data
      - Enable access control logging to audit data access
+
+### Error handling
+This is also fairly obvious, but robust error handling would need to be added to make this a production service. Error handling has not been implemented at this time, for the sake of time and also to no over-complicate the example code.
